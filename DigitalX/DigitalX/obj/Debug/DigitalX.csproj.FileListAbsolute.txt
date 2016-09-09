@@ -1,0 +1,16 @@
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\DigitalX.exe.config
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\DigitalX.exe
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\DigitalX.pdb
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.csprojResolveAssemblyReference.cache
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\MainWindow.g.cs
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\App.g.cs
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX_MarkupCompile.cache
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX_MarkupCompile.lref
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\MainWindow.baml
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.g.resources
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.Properties.Resources.resources
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.csproj.GenerateResource.Cache
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.exe
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.pdb
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Login.g.cs
+c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Login.baml
