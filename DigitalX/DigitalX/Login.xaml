@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:DigitalX"
         mc:Ignorable="d"
         Title="DigitalX | Login" Height="350" Width="525">
-    
+    <Window.Resources>
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Foreground" Value="Silver" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Height" Value="66" />
+        </Style>
+        <Style x:Key="textboxStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Silver" />
+            <Setter Property="Foreground" Value="DarkGray" />
+        </Style>
+    </Window.Resources>
+
+
     <Grid Background="#FF96C1FF">
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
@@ -15,16 +37,19 @@
             <RowDefinition Height="72.5" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-        <Label x:Name="lblTitle" Grid.Row="0" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="48" FontWeight="Bold" />
-
-        <Label x:Name="lblUsername" Content="Username: " VerticalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="53,75,296,1" Grid.RowSpan="2" HorizontalAlignment="Center" />
-        <TextBox x:Name="txtUsername" Grid.Row="1"  FontSize="30" Width="250" Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787" />
-
-        <Label x:Name="lblPassword" Grid.Row="2" Content="Password: " VerticalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="53,0,296,1" HorizontalAlignment="Center" Width="168" />
-        <TextBox x:Name="txtPassword" Grid.Row="2"  FontSize="30" Width="250" Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787" />
-
-        <Button x:Name="btnLogin" Grid.Row="3" Width="250" Height="66" Content="Login" FontFamily="Segoe UI Light" FontSize="36" FontWeight="Bold" Click="btnLogin_Click"/>
+        <Grid.ColumnDefinitions>
+            
+        </Grid.ColumnDefinitions>
         
+        <TextBlock x:Name="lblTitle" Grid.Row="0" Text="Login" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" TextAlignment="Center" Background="#FF004C81" Foreground="#FFD6D6D6" />
+
+        <Label x:Name="lblUsername" Content="Username: " FontSize="30" FontWeight="Bold" Margin="53,75,296,1" Grid.RowSpan="2" HorizontalAlignment="Center" />
+        <TextBox x:Name="txtUsername" Grid.Row="1"   Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787"  Style="{StaticResource textboxStyle}" />
+
+        <Label x:Name="lblPassword" Grid.Row="2" Content="Password: "  FontSize="30" FontWeight="Bold" Margin="53,0,296,1" HorizontalAlignment="Center" Width="168" />
+        <TextBox x:Name="txtPassword" Grid.Row="2"  Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787" Style="{StaticResource textboxStyle}"/>
+
+        <Button x:Name="btnLogin" Grid.Row="3" Content="Login" Click="btnLogin_Click" Style="{StaticResource buttonStyle}" />
+
     </Grid>
 </Window>
