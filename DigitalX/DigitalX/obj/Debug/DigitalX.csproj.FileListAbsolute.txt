@@ -14,3 +14,15 @@ c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\
 c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX.pdb
 c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Login.g.cs
 c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Login.baml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\EntityFramework.dll
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\EntityFramework.xml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Customers.g.cs
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Employees.g.cs
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Orders.g.cs
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Products.g.cs
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Customers.baml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Employees.baml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Orders.baml
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\Products.baml

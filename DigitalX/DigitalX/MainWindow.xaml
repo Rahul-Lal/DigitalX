@@ -33,10 +33,12 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label x:Name="lblTitle" Content="DigitalX" Grid.ColumnSpan="2" FontSize="42.5" FontWeight="Bold" HorizontalAlignment="Center" />
+        <TextBlock x:Name="lblTitle" Text="DigitalX" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" TextAlignment="Center" Background="#FF004C81" Foreground="#FFD6D6D6" Grid.ColumnSpan="2" />
 
-        <Button x:Name="btnOrders" Content="Orders" Grid.Row="1" HorizontalAlignment="Right" Width="125" Margin="0,0,25,0" Click="btnOrders_Click" Style="{StaticResource buttonStyle}"/>
-        <Button x:Name="btnCustomers" Content="Customers" Grid.Row="2" HorizontalAlignment="Right" Width="125" Margin="0,0,25,0" Click="" Style="{StaticResource buttonStyle}"/>
-        <Button x:Name="btnProducts" Content="Products" Grid.Row="3" HorizontalAlignment="Right" Width="125" Margin="0,0,25,0" Click="" Style="{StaticResource buttonStyle}"/>
+        <Button x:Name="btnOrders" Content="Orders" Grid.Row="3" HorizontalAlignment="Right" Width="125" Margin="0,0,25,0" Click="btnOrders_Click" Style="{StaticResource buttonStyle}"/>
+        <Button x:Name="btnCustomers" Content="Customers" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="125" Margin="0,0,25,0" Click="btnCustomers_Click" Style="{StaticResource buttonStyle}"/>
+        <Button x:Name="btnProducts" Content="Products" Grid.Row="2" HorizontalAlignment="Right" Width="125" Margin="0,0,25,0" Click="btnProducts_Click" Style="{StaticResource buttonStyle}"/>
+        <Button x:Name="btnEmployees" Content="Employees" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="125" Margin="0,0,25,0" Click="btnEmployees_Click" Style="{StaticResource buttonStyle}"/>
+        <Button x:Name="btnLogOff" Content="Log Off" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Width="62.5" Height="50" FontSize="15" Margin="0,0,25,0" Click="btnLogOff_Click" Style="{StaticResource buttonStyle}"/>
     </Grid>
 </Page>

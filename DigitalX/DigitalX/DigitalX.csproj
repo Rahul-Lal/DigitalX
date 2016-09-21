@@ -81,92 +81,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Address.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AddressType.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ContactType.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DigitalXBDataModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Employee.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Invoiced.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OrderDetail.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductCategory.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductSubCategory.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Retailer.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Role.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectCustomerAddresses_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectCustomerContacts_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectCustomers_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectEmployeeAddresses_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectEmployeeContacts_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="selectEmployees_Result.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Shipper.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ShipperOption.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ShippingLocation.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ShippingMethod.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="WishList.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="WishListItem.cs">
-      <DependentUpon>DigitalXBDataModel.tt</DependentUpon>
-    </Compile>
+    <Page Include="Customers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employees.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -179,15 +101,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DigitalXBDataModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DigitalXBDataModel.Context.tt</DependentUpon>
+    <Compile Include="Customers.xaml.cs">
+      <DependentUpon>Customers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DigitalXBDataModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DigitalXBDataModel.edmx</DependentUpon>
+    <Compile Include="Employees.xaml.cs">
+      <DependentUpon>Employees.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -200,10 +118,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Products.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Orders.xaml.cs">
       <DependentUpon>Orders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products.xaml.cs">
+      <DependentUpon>Products.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -222,13 +147,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DigitalXBDataModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DigitalXBDataModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DigitalXBDataModel.edmx.diagram">
-      <DependentUpon>DigitalXBDataModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -238,25 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DigitalXBDataModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DigitalXBDataModel.edmx</DependentUpon>
-      <LastGenOutput>DigitalXBDataModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DigitalXBDataModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DigitalXBDataModel.edmx</DependentUpon>
-      <LastGenOutput>DigitalXBDataModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="DigitalXDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DigitalXDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DigitalXDB.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

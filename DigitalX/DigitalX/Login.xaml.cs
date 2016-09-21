@@ -28,7 +28,7 @@ namespace DigitalX
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             NavigationService nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+            nav.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
         }
     }
 }

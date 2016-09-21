@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\obj\Debug\
 DigitalX
 none
 false
 DEBUG;TRACE
-c:\users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\App.xaml
-2-419086188
+C:\Users\ames\documents\visual studio 2015\Projects\DigitalX\DigitalX\App.xaml
+6-835398635
 
-6-1227449588
-13738642453
-MainWindow.xaml;Login.xaml;
+1039231942
+18867597395
+Customers.xaml;Employees.xaml;MainWindow.xaml;Login.xaml;Orders.xaml;Products.xaml;
 
 False
 
