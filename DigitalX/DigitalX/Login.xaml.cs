@@ -27,8 +27,12 @@ namespace DigitalX
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
+            this.Visibility = Visibility.Collapsed;
+            NavigationWindow nw = new NavigationWindow();
+            
+            nw.Title = "DigitalX | Main Menu";
+            nw.Content = new MainPage();
+            nw.Show();
         }
     }
 }

@@ -44,6 +44,7 @@ namespace DigitalX
 
         private void btnCustomers_Click(object sender, RoutedEventArgs e)
         {
+            this.Visibility = Visibility.Collapsed;
             nw.Title = "DigitalX | Customers";
             nw.Content = new Customers();
             nw.Show();
@@ -51,6 +52,7 @@ namespace DigitalX
 
         private void btnProducts_Click(object sender, RoutedEventArgs e)
         {
+            this.Visibility = Visibility.Collapsed;
             nw.Title = "DigitalX | Products";
             nw.Content = new Products();
             nw.Show();
@@ -58,8 +60,11 @@ namespace DigitalX
 
         private void btnLogOff_Click(object sender, RoutedEventArgs e)
         {
-
-            nw.GoBack();
+            this.Visibility = Visibility.Collapsed;
+            
+            nw.Title = "DigitalX | Login";
+            nw.Content = new MainWindow();
+            nw.Show();
         }
     }
 }
