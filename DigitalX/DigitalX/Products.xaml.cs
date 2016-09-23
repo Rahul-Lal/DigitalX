@@ -23,11 +23,40 @@ namespace DigitalX
         public Products()
         {
             InitializeComponent();
+            var db = new newDigitalXDBEntities();
+            int numlock = 1;
+
+            if(numlock == 0)
+            {
+                dgdProducts.ItemsSource = (from productVariable in db.Products
+                                         select new
+                                         {
+                                             productVariable.ProductID,
+                                             productVariable.RetailerID,
+                                             productVariable.SubCategoryID,
+                                             productVariable.ProductName,
+                                             productVariable.ProductDescription,
+                                             productVariable.Price,
+                                             productVariable.UnitsInStock,
+                                             productVariable.IsDiscontinued
+                                         }
+                                          );
+            }
+            else
+            {
+                this.Visibility = Visibility.Visible;
+            }
         }
         public void backfunction()
         {
             NavigationWindow nw = (NavigationWindow)Window.GetWindow(this);
             nw.Close();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            backfunction();
+        }
+
     }
 }

@@ -1,0 +1,45 @@
+﻿<Page x:Class="DigitalX.ProductDetail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DigitalX"
+      mc:Ignorable="d"
+      Width="Auto" Height="Auto"
+      Title="DigitalX | Product Detail">
+
+
+    <Grid Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblProductID" Content="Product ID: " Grid.Column="0" Grid.Row="0"/>
+        <TextBox  x:Name="txtProductID" Grid.Column="0" Grid.Row="1" Width="75" Height="25"/>
+        <Label x:Name="lblProductName" Content="Product Name: " Grid.Column="0" Grid.Row="1"/>
+        <TextBox  x:Name="txtProductName" Grid.Column="0" Grid.Row="1" Width="75" Height="25" />
+        <Label x:Name="lblProductDescription" Content="Product ID: " Grid.Column="0" Grid.Row="2"/>
+        <TextBox  x:Name="txtProductDescription" Grid.Column="0" Grid.Row="1" Width="75" Height="25" />
+        <Label x:Name="lblPrice" Content="Product ID: " Grid.Column="0" Grid.Row="3" />
+        <TextBox  x:Name="txtPrice" Grid.Column="0" Grid.Row="1" Width="75" Height="25" />
+        <Label x:Name="lblUnitInPrice" Content="Product ID: " Grid.Column="0" Grid.Row="4"/>
+        <TextBox  x:Name="txtUnitInPrice" Grid.Column="0" Grid.Row="1" Width="75" Height="25" />
+        <Label x:Name="lblIsDiscontinued" Content="Product ID: " Grid.Column="0" Grid.Row="5"/>
+        <TextBox />
+    </Grid>
+</Page>

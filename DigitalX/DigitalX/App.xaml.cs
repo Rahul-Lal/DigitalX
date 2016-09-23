@@ -13,5 +13,7 @@ namespace DigitalX
     /// </summary>
     public partial class App : Application
     {
+        public Employee currentUser;
+        public newDigitalXDBEntities dbContext;
     }
 }

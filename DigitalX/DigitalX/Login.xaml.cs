@@ -18,14 +18,16 @@ namespace DigitalX
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Login : Window
     {
-        public MainWindow()
+            connectDatabase cd = new connectDatabase();
+
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        void backupLogin()
         {
             this.Visibility = Visibility.Collapsed;
             NavigationWindow nw = new NavigationWindow();
@@ -33,6 +35,21 @@ namespace DigitalX
             nw.Title = "DigitalX | Main Menu";
             nw.Content = new MainPage();
             nw.Show();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if ((txtUsername.Text != "") && (txtPassword.Password != ""))
+            {
+                cd.loginButton(txtUsername.Text, txtPassword.Password);
+            }
+            else
+            {
+                MessageBox.Show("Your are using backup login","WARNING", MessageBoxButton.OK, MessageBoxImage.Warning);
+                backupLogin();
+            }
+
+            
         }
     }
 }

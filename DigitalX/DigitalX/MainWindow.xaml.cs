@@ -35,6 +35,7 @@ namespace DigitalX
 
         private void btnOrders_Click(object sender, RoutedEventArgs e)
         {
+            NavigationWindow nw = new NavigationWindow();
             nw.Title = "DigitalX | Orders";
             nw.Content = new Orders();
             nw.Show();
@@ -42,6 +43,7 @@ namespace DigitalX
 
         private void btnEmployees_Click(object sender, RoutedEventArgs e)
         {
+            NavigationWindow nw = new NavigationWindow();
             nw.Title = "DigitalX | Employees";
             nw.Content = new Employees();
             nw.Show();
@@ -49,7 +51,6 @@ namespace DigitalX
 
         private void btnCustomers_Click(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Collapsed;
             nw.Title = "DigitalX | Customers";
             nw.Content = new Customers();
             nw.Show();
@@ -57,7 +58,6 @@ namespace DigitalX
 
         private void btnProducts_Click(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Collapsed;
             nw.Title = "DigitalX | Products";
             nw.Content = new Products();
             nw.Show();
@@ -65,11 +65,21 @@ namespace DigitalX
 
         private void btnLogOff_Click(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Collapsed;
-            
-            nw.Title = "DigitalX | Login";
-            nw.Content = new MainWindow();
-            nw.Show();
+            bool loginApproved = false;
+            this.Visibility = Visibility.Hidden;
+
+            while(loginApproved != false)
+            {
+                Login Login = new Login();
+                bool? retVal = Login.ShowDialog();
+
+                if((retVal != false) && (retVal != null))
+                {
+                    loginApproved = true;
+                    
+
+                }
+            }
             backfunction();
         }
     }

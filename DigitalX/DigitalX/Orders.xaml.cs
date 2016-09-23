@@ -23,18 +23,19 @@ namespace DigitalX
         public Orders()
         {
             InitializeComponent();
+            var db = new newDigitalXDBEntities();
 
-            /*
-                dgdOrders.ItemsSource = (from orderVariable in dborders
-                                           select new
-                                           {
-                                               orderVariable.orderID,
-                                               orderVariable.FirstName,
-                                               orderVariable.LastName,
-                                               orderVariable.UserName
-                                           }
-                                          );
-            */
+            dgdOrders.ItemsSource = (from orderVariable in db.Orders
+                                     select new
+                                     {
+                                         orderVariable.OrderID,
+                                         orderVariable.CustomerID,
+                                         orderVariable.AddressID,
+                                         orderVariable.OrderDate,
+                                         orderVariable.Complete
+                                     }
+                                      );
+
         }
         public void backfunction()
         {

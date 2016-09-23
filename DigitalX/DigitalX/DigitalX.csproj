@@ -81,6 +81,95 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Address.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddressType.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactType.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalXDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Invoiced.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.xaml.cs">
+      <DependentUpon>ProductDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSubCategory.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Retailer.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectCustomerAddresses_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectCustomerContacts_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectCustomers_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectEmployeeAddresses_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectEmployeeContacts_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selectEmployees_Result.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shipper.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShipperOption.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingLocation.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingMethod.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WishList.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WishListItem.cs">
+      <DependentUpon>DigitalXDataModel.tt</DependentUpon>
+    </Compile>
     <Page Include="Customers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +194,16 @@
     <Compile Include="Customers.xaml.cs">
       <DependentUpon>Customers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DigitalXDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalXDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalXDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalXDataModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Employees.xaml.cs">
       <DependentUpon>Employees.xaml</DependentUpon>
     </Compile>
@@ -116,6 +215,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Orders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,6 +251,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="DigitalXDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DigitalXDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DigitalXDataModel.edmx.diagram">
+      <DependentUpon>DigitalXDataModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -175,6 +285,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="1410840020_37273016e4_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DigitalXDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DigitalXDataModel.edmx</DependentUpon>
+      <LastGenOutput>DigitalXDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DigitalXDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DigitalXDataModel.edmx</DependentUpon>
+      <LastGenOutput>DigitalXDataModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

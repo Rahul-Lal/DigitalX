@@ -10,36 +10,37 @@ namespace DigitalX
     class connectDatabase
     {
         App currentApp;
-        public void DatabaseSetUp()
+        public async void DatabaseSetUp()
         {
             currentApp = (App)Application.Current;
             // currentApp.currentUser = null;
 
             if (/*currentApp.UserPermissions != null*/true)
             {
-                //currentApp.UserPermissions.Clear();
-                //currentApp.UserPermissions = null;
+                // awaiturrentApp.UserPermissions.Clear();
+                // currentApp.UserPermissions = null;
+
             }
         }
 
-        public void loginButton(string UserName, string Password)
+        public async void loginButton(string UserName, string Password)
         {
 
-            /*
+
             Employee currentEmployee =
             (
                     from curEmp
                     in currentApp.dbContext.Employees
-                    where (curEmp.UserName == UserName.ToString) && (curEmp.Password == Password.ToString)
+                    where (curEmp.Username == UserName.ToString()) && (curEmp.Password == Password.ToString())
                     select curEmp).FirstOrDefault();
-            */
 
-            if((UserName.ToString() != null) && (Password.ToString() != null))
+
+            if ((UserName.ToString() != null) && (Password.ToString() != null))
             {
-                if (/*currentEmployee != null*/ true)
+                if (currentEmployee != null)
                 {
-                    //currentApp.currentUser = currentEmployee;
-                    //this.dialogResult = true;
+                    currentApp.currentUser = currentEmployee;
+                    //Window.dialogResult = true;
                 }
                 else
                 {
@@ -51,7 +52,5 @@ namespace DigitalX
                 MessageBox.Show("Username or Password not entered", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
-
-
     }
 }

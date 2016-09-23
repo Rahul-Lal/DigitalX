@@ -23,17 +23,17 @@ namespace DigitalX
         public Customers()
         {
             InitializeComponent();
-            /*
-                dgdCustomer.ItemsSource = (from customerVariable in dbCustomers
-                                           select new
-                                           {
-                                               customerVariable.CustomerID,
-                                               customerVariable.FirstName,
-                                               customerVariable.LastName,
-                                               customerVariable.UserName
-                                           }
-                                          );
-            */
+            var db = new newDigitalXDBEntities();
+            dgdCustomer.ItemsSource = (from customerVariable in db.Customers
+                                       select new
+                                       {
+                                           customerVariable.CustomerID,
+                                           customerVariable.FirstName,
+                                           customerVariable.LastName,
+                                           customerVariable.UserName
+                                       }
+                                      );
+
         }
         public void backfunction()
         {
