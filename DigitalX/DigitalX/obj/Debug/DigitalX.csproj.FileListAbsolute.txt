@@ -54,3 +54,6 @@ C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX-master\DigitalX\Dig
 C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX-master\DigitalX\DigitalX\obj\Debug\DigitalX.g.resources
 C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX-master\DigitalX\DigitalX\obj\Debug\DigitalX.Properties.Resources.resources
 C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX-master\DigitalX\DigitalX\obj\Debug\DigitalX.csproj.GenerateResource.Cache
+C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX\DigitalX\obj\Debug\DigitalX_Content.g.cs
+C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX\DigitalX\obj\Debug\ProductDetail.g.cs
+C:\Users\ames\Documents\Visual Studio 2015\Projects\DigitalX\DigitalX\obj\Debug\ProductDetail.baml

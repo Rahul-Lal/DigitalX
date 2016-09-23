@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="newDigitalXDBModelStoreContainer" CdmEntityContainer="newDigitalXDBEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AddressTypes">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.AddressType">
+        <MappingFragment StoreEntitySet="AddressType">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ContactType" ColumnName="ContactType" />
+          <ScalarProperty Name="Contact1" ColumnName="Contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactTypes">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ContactType">
+        <MappingFragment StoreEntitySet="ContactType">
+          <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+          <ScalarProperty Name="ContactType1" ColumnName="ContactType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="EmployeeImage" ColumnName="EmployeeImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoiceds">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Invoiced">
+        <MappingFragment StoreEntitySet="Invoiced">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ShippingOption" ColumnName="ShippingOption" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Complete" ColumnName="Complete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="DetailID" ColumnName="DetailID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Packaged" ColumnName="Packaged" />
+          <ScalarProperty Name="PackagedBy" ColumnName="PackagedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RetailerID" ColumnName="RetailerID" />
+          <ScalarProperty Name="SubCategoryID" ColumnName="SubCategoryID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UnitsInStock" ColumnName="UnitsInStock" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="IsDiscontinued" ColumnName="IsDiscontinued" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSubCategories">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ProductSubCategory">
+        <MappingFragment StoreEntitySet="ProductSubCategory">
+          <ScalarProperty Name="SubCategoryID" ColumnName="SubCategoryID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="SubCategory" ColumnName="SubCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retailers">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Retailer">
+        <MappingFragment StoreEntitySet="Retailer">
+          <ScalarProperty Name="RetailerID" ColumnName="RetailerID" />
+          <ScalarProperty Name="Retailer1" ColumnName="Retailer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Role1" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shippers">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.Shipper">
+        <MappingFragment StoreEntitySet="Shipper">
+          <ScalarProperty Name="ShipperID" ColumnName="ShipperID" />
+          <ScalarProperty Name="ShipperName" ColumnName="ShipperName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipperOptions">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ShipperOption">
+        <MappingFragment StoreEntitySet="ShipperOptions">
+          <ScalarProperty Name="ShippingID" ColumnName="ShippingID" />
+          <ScalarProperty Name="ShipperID" ColumnName="ShipperID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShippingLocations">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ShippingLocation">
+        <MappingFragment StoreEntitySet="ShippingLocation">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShippingMethods">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.ShippingMethod">
+        <MappingFragment StoreEntitySet="ShippingMethod">
+          <ScalarProperty Name="MethodID" ColumnName="MethodID" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WishLists">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.WishList">
+        <MappingFragment StoreEntitySet="WishList">
+          <ScalarProperty Name="WishListID" ColumnName="WishListID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WishListItems">
+      <EntityTypeMapping TypeName="newDigitalXDBModel.WishListItem">
+        <MappingFragment StoreEntitySet="WishListItems">
+          <ScalarProperty Name="WishListID" ColumnName="WishListID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CustomerAddress" TypeName="newDigitalXDBModel.CustomerAddress" StoreEntitySet="CustomerAddress">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CustomerContact" TypeName="newDigitalXDBModel.CustomerContact" StoreEntitySet="CustomerContact">
+      <EndProperty Name="Contact">
+        <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+      </EndProperty>
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmployeeAddress" TypeName="newDigitalXDBModel.EmployeeAddress" StoreEntitySet="EmployeeAddress">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmployeeContact" TypeName="newDigitalXDBModel.EmployeeContact" StoreEntitySet="EmployeeContact">
+      <EndProperty Name="Contact">
+        <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+      </EndProperty>
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmployeeRoles" TypeName="newDigitalXDBModel.EmployeeRoles" StoreEntitySet="EmployeeRoles">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="addEmployeeToRole" FunctionName="newDigitalXDBModel.Store.addEmployeeToRole" />
+    <FunctionImportMapping FunctionImportName="createEmployeePassword" FunctionName="newDigitalXDBModel.Store.createEmployeePassword" />
+    <FunctionImportMapping FunctionImportName="deleteCustomer" FunctionName="newDigitalXDBModel.Store.deleteCustomer" />
+    <FunctionImportMapping FunctionImportName="deleteCustomerAddress" FunctionName="newDigitalXDBModel.Store.deleteCustomerAddress" />
+    <FunctionImportMapping FunctionImportName="deleteCustomerContact" FunctionName="newDigitalXDBModel.Store.deleteCustomerContact" />
+    <FunctionImportMapping FunctionImportName="deleteEmployee" FunctionName="newDigitalXDBModel.Store.deleteEmployee" />
+    <FunctionImportMapping FunctionImportName="deleteEmployeeAddress" FunctionName="newDigitalXDBModel.Store.deleteEmployeeAddress" />
+    <FunctionImportMapping FunctionImportName="deleteEmployeeContact" FunctionName="newDigitalXDBModel.Store.deleteEmployeeContact" />
+    <FunctionImportMapping FunctionImportName="deleteOrder" FunctionName="newDigitalXDBModel.Store.deleteOrder" />
+    <FunctionImportMapping FunctionImportName="deleteOrderDetail" FunctionName="newDigitalXDBModel.Store.deleteOrderDetail" />
+    <FunctionImportMapping FunctionImportName="deleteProduct" FunctionName="newDigitalXDBModel.Store.deleteProduct" />
+    <FunctionImportMapping FunctionImportName="deleteRetailer" FunctionName="newDigitalXDBModel.Store.deleteRetailer" />
+    <FunctionImportMapping FunctionImportName="insertCustomer" FunctionName="newDigitalXDBModel.Store.insertCustomer" />
+    <FunctionImportMapping FunctionImportName="insertCustomerAddress" FunctionName="newDigitalXDBModel.Store.insertCustomerAddress" />
+    <FunctionImportMapping FunctionImportName="insertCustomerContact" FunctionName="newDigitalXDBModel.Store.insertCustomerContact" />
+    <FunctionImportMapping FunctionImportName="insertEmployee" FunctionName="newDigitalXDBModel.Store.insertEmployee" />
+    <FunctionImportMapping FunctionImportName="insertEmployeeAddress" FunctionName="newDigitalXDBModel.Store.insertEmployeeAddress" />
+    <FunctionImportMapping FunctionImportName="insertEmployeeContact" FunctionName="newDigitalXDBModel.Store.insertEmployeeContact" />
+    <FunctionImportMapping FunctionImportName="insertInvoiced" FunctionName="newDigitalXDBModel.Store.insertInvoiced" />
+    <FunctionImportMapping FunctionImportName="insertOrder" FunctionName="newDigitalXDBModel.Store.insertOrder" />
+    <FunctionImportMapping FunctionImportName="insertOrderDetail" FunctionName="newDigitalXDBModel.Store.insertOrderDetail" />
+    <FunctionImportMapping FunctionImportName="insertProduct" FunctionName="newDigitalXDBModel.Store.insertProduct" />
+    <FunctionImportMapping FunctionImportName="removeEmployeeFromRole" FunctionName="newDigitalXDBModel.Store.removeEmployeeFromRole" />
+    <FunctionImportMapping FunctionImportName="selectCustomerAddresses" FunctionName="newDigitalXDBModel.Store.selectCustomerAddresses">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectCustomerAddresses_Result">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectCustomerContacts" FunctionName="newDigitalXDBModel.Store.selectCustomerContacts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectCustomerContacts_Result">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="ContactType" ColumnName="ContactType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectCustomers" FunctionName="newDigitalXDBModel.Store.selectCustomers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectCustomers_Result">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectEmployeeAddresses" FunctionName="newDigitalXDBModel.Store.selectEmployeeAddresses">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectEmployeeAddresses_Result">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectEmployeeContacts" FunctionName="newDigitalXDBModel.Store.selectEmployeeContacts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectEmployeeContacts_Result">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="ContactType" ColumnName="ContactType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectEmployeeRoles" FunctionName="newDigitalXDBModel.Store.selectEmployeeRoles" />
+    <FunctionImportMapping FunctionImportName="selectEmployees" FunctionName="newDigitalXDBModel.Store.selectEmployees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="newDigitalXDBModel.selectEmployees_Result">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="newDigitalXDBModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="newDigitalXDBModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="newDigitalXDBModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="newDigitalXDBModel.Store.sp_helpdiagramdefinition" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="newDigitalXDBModel.Store.sp_helpdiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="newDigitalXDBModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="newDigitalXDBModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="updateAddress" FunctionName="newDigitalXDBModel.Store.updateAddress" />
+    <FunctionImportMapping FunctionImportName="updateContact" FunctionName="newDigitalXDBModel.Store.updateContact" />
+    <FunctionImportMapping FunctionImportName="updateCustomer" FunctionName="newDigitalXDBModel.Store.updateCustomer" />
+    <FunctionImportMapping FunctionImportName="updateEmployee" FunctionName="newDigitalXDBModel.Store.updateEmployee" />
+    <FunctionImportMapping FunctionImportName="updateInvoiced" FunctionName="newDigitalXDBModel.Store.updateInvoiced" />
+    <FunctionImportMapping FunctionImportName="updateOrder" FunctionName="newDigitalXDBModel.Store.updateOrder" />
+    <FunctionImportMapping FunctionImportName="updateProduct" FunctionName="newDigitalXDBModel.Store.updateProduct" />
+    <FunctionImportMapping FunctionImportName="verifyEmployee" FunctionName="newDigitalXDBModel.Store.verifyEmployee" />
+  </EntityContainerMapping>
+</Mapping>
