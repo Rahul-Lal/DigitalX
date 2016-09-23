@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("digitalxbdatamodel.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("digitalxbdatamodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("1410840020_37273016e4_o.jpg")]
 
 

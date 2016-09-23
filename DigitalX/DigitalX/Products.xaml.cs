@@ -24,5 +24,10 @@ namespace DigitalX
         {
             InitializeComponent();
         }
+        public void backfunction()
+        {
+            NavigationWindow nw = (NavigationWindow)Window.GetWindow(this);
+            nw.Close();
+        }
     }
 }

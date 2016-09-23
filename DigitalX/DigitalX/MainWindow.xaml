@@ -5,10 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DigitalX"
       mc:Ignorable="d" 
-      Title="DigitalX | Main Page" Height="350" Width="525">
+      Title="DigitalX | Main Page" Height="Auto" Width="Auto">
     <Page.Resources>
         <Style x:Key="buttonStyle" TargetType="Button">
             <Setter Property="Background" Value="Black" />
+            <Setter Property="Opacity" Value="0.75" />
             <Setter Property="Foreground" Value="Silver" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -20,7 +21,10 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="#FF96C1FF">
+    <Grid  Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />

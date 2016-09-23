@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DigitalX"
-      mc:Ignorable="d"  Height="350" Width="525"
+      mc:Ignorable="d"  Height="Auto" Width="Auto"
       Title="DigitalX | Customers">
 
     <Page.Resources>
@@ -30,13 +30,16 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="#FF96C1FF">
+    <Grid  Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <DataGrid x:Name="dgdCustomer" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
-        <Button x:Name="btnBack" Content="Go Back" Click="" Style="{StaticResource buttonStyle}" Width="50" Height="33" FontSize="10" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Grid.Row="1" Margin="236,0,239,-277"/>
+        <DataGrid x:Name="dgdCustomer" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" />
+        <Button x:Name="btnBack" Content="Go Back" Click="btnBack_Click" Style="{StaticResource buttonStyle}" Width="50" Height="33" FontSize="10" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Grid.Row="1" Margin="236,0,239,-277"/>
     </Grid>
 </Page>

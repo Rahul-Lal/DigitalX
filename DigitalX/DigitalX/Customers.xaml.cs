@@ -23,6 +23,27 @@ namespace DigitalX
         public Customers()
         {
             InitializeComponent();
+            /*
+                dgdCustomer.ItemsSource = (from customerVariable in dbCustomers
+                                           select new
+                                           {
+                                               customerVariable.CustomerID,
+                                               customerVariable.FirstName,
+                                               customerVariable.LastName,
+                                               customerVariable.UserName
+                                           }
+                                          );
+            */
+        }
+        public void backfunction()
+        {
+            NavigationWindow nw = (NavigationWindow)Window.GetWindow(this);
+            nw.Close();
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            backfunction();
         }
     }
 }

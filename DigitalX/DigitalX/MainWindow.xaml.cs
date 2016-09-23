@@ -21,11 +21,16 @@ namespace DigitalX
     public partial class MainPage : Page
     {
         NavigationWindow nw = new NavigationWindow();
-        App app;
+        connectDatabase cd = new connectDatabase();
 
         public MainPage()
         {
             InitializeComponent();
+        }
+        public void backfunction()
+        {
+            nw = (NavigationWindow)Window.GetWindow(this);
+            nw.Close();
         }
 
         private void btnOrders_Click(object sender, RoutedEventArgs e)
@@ -65,6 +70,7 @@ namespace DigitalX
             nw.Title = "DigitalX | Login";
             nw.Content = new MainWindow();
             nw.Show();
+            backfunction();
         }
     }
 }

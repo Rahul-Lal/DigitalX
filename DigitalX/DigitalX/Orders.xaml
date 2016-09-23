@@ -28,7 +28,10 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="#FF96C1FF">
+    <Grid  Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
 
     </Grid>
 </Page>

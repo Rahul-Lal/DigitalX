@@ -23,6 +23,23 @@ namespace DigitalX
         public Orders()
         {
             InitializeComponent();
+
+            /*
+                dgdOrders.ItemsSource = (from orderVariable in dborders
+                                           select new
+                                           {
+                                               orderVariable.orderID,
+                                               orderVariable.FirstName,
+                                               orderVariable.LastName,
+                                               orderVariable.UserName
+                                           }
+                                          );
+            */
+        }
+        public void backfunction()
+        {
+            NavigationWindow nw = (NavigationWindow)Window.GetWindow(this);
+            nw.Close();
         }
     }
 }

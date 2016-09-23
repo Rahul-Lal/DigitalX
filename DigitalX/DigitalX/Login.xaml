@@ -10,6 +10,7 @@
         <Style x:Key="buttonStyle" TargetType="Button">
             <Setter Property="Background" Value="Black" />
             <Setter Property="Foreground" Value="Silver" />
+            <Setter Property="Opacity" Value="0.75" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="FontFamily" Value="Segoe UI" />
@@ -29,7 +30,10 @@
     </Window.Resources>
 
 
-    <Grid Background="#FF96C1FF">
+    <Grid  Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
             <RowDefinition Height="50" />
@@ -38,15 +42,15 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            
+
         </Grid.ColumnDefinitions>
-        
+
         <TextBlock x:Name="lblTitle" Grid.Row="0" Text="Login" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" TextAlignment="Center" Background="#FF004C81" Foreground="#FFD6D6D6" />
 
-        <Label x:Name="lblUsername" Content="Username: " FontSize="30" FontWeight="Bold" Margin="53,75,296,1" Grid.RowSpan="2" HorizontalAlignment="Center" />
+        <Label x:Name="lblUsername" Content="Username: " FontSize="30" FontWeight="Bold" Margin="53,75,296,1" Grid.RowSpan="2" HorizontalAlignment="Center" Foreground="#FFCFCFCF" />
         <TextBox x:Name="txtUsername" Grid.Row="1"   Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787"  Style="{StaticResource textboxStyle}" />
 
-        <Label x:Name="lblPassword" Grid.Row="2" Content="Password: "  FontSize="30" FontWeight="Bold" Margin="53,0,296,1" HorizontalAlignment="Center" Width="168" />
+        <Label x:Name="lblPassword" Grid.Row="2" Content="Password: "  FontSize="30" FontWeight="Bold" Margin="53,0,296,1" HorizontalAlignment="Center" Width="168" Foreground="#FFCFCFCF" />
         <TextBox x:Name="txtPassword" Grid.Row="2"  Margin="221,0,46,0" HorizontalAlignment="Center" BorderBrush="#FF878787" Style="{StaticResource textboxStyle}"/>
 
         <Button x:Name="btnLogin" Grid.Row="3" Content="Login" Click="btnLogin_Click" Style="{StaticResource buttonStyle}" />

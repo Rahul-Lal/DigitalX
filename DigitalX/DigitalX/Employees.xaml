@@ -11,6 +11,7 @@
     <Page.Resources>
         <Style x:Key="buttonStyle" TargetType="Button">
             <Setter Property="Background" Value="Black" />
+            <Setter Property="Opacity" Value="0.75" />
             <Setter Property="Foreground" Value="Silver" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -30,7 +31,10 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="#FF96C1FF">
+    <Grid  Height="Auto" Width="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="1410840020_37273016e4_o.jpg"/>
+        </Grid.Background>
 
     </Grid>
 </Page>

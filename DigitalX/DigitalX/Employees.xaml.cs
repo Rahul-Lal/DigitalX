@@ -23,6 +23,23 @@ namespace DigitalX
         public Employees()
         {
             InitializeComponent();
+
+            /*
+                dgdEmployees.ItemsSource = (from employeeVariable in dbemployees
+                                           select new
+                                           {
+                                               employeeVariable.employeeID,
+                                               employeeVariable.FirstName,
+                                               employeeVariable.LastName,
+                                               employeeVariable.UserName
+                                           }
+                                          );
+            */
+        }
+        public void backfunction()
+        {
+            NavigationWindow nw = (NavigationWindow)Window.GetWindow(this);
+            nw.Close();
         }
     }
 }
