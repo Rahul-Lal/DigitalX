@@ -10,7 +10,7 @@ namespace DigitalX
     class connectDatabase
     {
         App currentApp;
-        public void loginSetUp()
+        public void DatabaseSetUp()
         {
             currentApp = (App)Application.Current;
             // currentApp.currentUser = null;
@@ -51,5 +51,7 @@ namespace DigitalX
                 MessageBox.Show("Username or Password not entered", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
+
+
     }
 }
